@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'EventAndOutputProblem';
+  message: string | undefined;
+
+  receiveWish($event: string | undefined) {
+    this.message = $event;
+  }
 }
